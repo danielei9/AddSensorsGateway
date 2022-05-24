@@ -1,6 +1,8 @@
 # AddSensorsGateway
 Add sensors from excel table to python and then send mqtt to gateway for config and add sensors to port 4999
 Se pueden añadir de forma manual o de forma automatica desde un excel siguiendo la estructura indicada.
+@todo install xls 
+esquema excel 
 Requisitos: 
     Python3 
     pip3 
