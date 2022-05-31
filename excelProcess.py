@@ -6,7 +6,7 @@ from datetime import datetime
 import time
 
 gateway = "dca632143f21"
-print(""" Seleccione un modo de uso: \n     1. Agregar sensores mediante excel... (Configuracion del excel 1º columna componentName y 3º Deveui)\n     2. Manualamente 1by1 () \n     3. Get Servers \n     4. Get Oems \n     5. Delete from id to id """)
+print(""" Seleccione un modo de uso: \n     1. Agregar sensores mediante excel... (Configuracion del excel 1º columna componentName y 3º Deveui)\n     2. Manualamente 1by1 () \n     3. Get Servers \n     4. Get Oems \n     5. Delete from id to id\n     6. PUT from id to id """)
 mode = input()
 print(" Introduzca la mac gateway... ejemplo b827eb18ad132")
 gateway = input()
@@ -152,6 +152,36 @@ if(mode == "5"):
     "path" : "/oemsensors/""" + str(i) + """\", 
     "method" : "DELETE", 
     "body" : "", 
+    "port" : 4999, 
+    "timestamp" : "2019-12-08T16:00:02.2805625Z", 
+    "requestId" : "123456790", 
+    "authentication" :true 
+    }"""
+        addSensorToGateway.send(gateway,messageToSend)
+        
+    while True:
+        c= 0
+
+
+
+if(mode == "6"):
+    print(" put funciona por rango")
+    print("introduzca desde que id desea eliminar")
+    startId = input()
+    print("introduzca hasta que id desea eliminar")
+    finalId = input()
+    print("introduzca Nombre de la variable Ejemplo CurrentMeter")
+    nameVar = input()
+    print("introduzca Variable Ejemplo : S01 ")
+    var = input()
+    addSensorToGateway.createLoopMqttRecive(gateway + "/gateway_requests/response/#")
+    addSensorToGateway.createLoopMqttRecive(gateway + "/gateway_requests/response/#")
+    for i in range(int(startId),int(finalId)):
+            # body" : "{\\"sensorModelName\\":\\"SJEvoSJEvo\\",\\"applicationName\\":\\"app\\",\\"loraAddress\\":\\\"""" + loraAddressStr + """\\",\\"componentName\\":\\\"""" + componentNameStr + """\\",\\"sensorNames\\":{\\"volume\\":\\"S01\\"},\\"serverIds\\":[2]}",
+        messageToSend = """{ 
+    "path" : "/oemsensors/""" + str(i) + """\", 
+    "method" : "PUT", 
+    "body" : "{\"sensorNames\":{\"""" + str(nameVar) + """\":\"""" + str(var) + """\"}}",
     "port" : 4999, 
     "timestamp" : "2019-12-08T16:00:02.2805625Z", 
     "requestId" : "123456790", 
