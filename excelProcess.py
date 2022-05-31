@@ -6,7 +6,7 @@ from datetime import datetime
 import time
 
 gateway = "dca632143f21"
-print(""" Seleccione un modo de uso: \n     1. Agregar sensores mediante excel... (Configuracion del excel 1º columna componentName y 3º Deveui)\n     2. Manualamente 1by1 () \n     3. Get Servers \n     4. Get Oems \n     5. Delete from id to id\n     6. PUT from id to id """)
+print(""" Seleccione un modo de uso: \n     1. Agregar sensores mediante excel... (Configuracion del excel 1º columna componentName y 3º Deveui)\n     2. Manualamente 1by1 () \n     3. Get Servers \n     4. Get Oems \n     5. Delete from id to id\n     6. PUT from id to id\n     7. PUT from list id """)
 mode = input()
 print(" Introduzca la mac gateway... ejemplo b827eb18ad132")
 gateway = input()
@@ -188,7 +188,36 @@ if(mode == "6"):
     "authentication" :true 
     }"""
         addSensorToGateway.send(gateway,messageToSend)
-        
+    
+    while True:
+        c= 0
+
+    
+if(mode == "7"):
+    print(" put funciona por lista")
+    print("introduzca las id separadas por un espacio")
+    idliststr = input()
+    idlist = idliststr.split(" ")
+    print(idlist)
+    print("introduzca Nombre de la variable Ejemplo CurrentMeter")
+    nameVar = input()
+    print("introduzca Variable Ejemplo : S01 ")
+    var = input()
+    addSensorToGateway.createLoopMqttRecive(gateway + "/gateway_requests/response/#")
+    for i in idlist:
+            # body" : "{\\"sensorModelName\\":\\"SJEvoSJEvo\\",\\"applicationName\\":\\"app\\",\\"loraAddress\\":\\\"""" + loraAddressStr + """\\",\\"componentName\\":\\\"""" + componentNameStr + """\\",\\"sensorNames\\":{\\"volume\\":\\"S01\\"},\\"serverIds\\":[2]}",
+        messageToSend = """{ 
+    "path" : "/oemsensors/""" + str(i) + """\", 
+    "method" : "PUT", 
+    "body" : "{\"sensorNames\":{\"""" + str(nameVar) + """\":\"""" + str(var) + """\"}}",
+    "port" : 4999, 
+    "timestamp" : "2019-12-08T16:00:02.2805625Z", 
+    "requestId" : "123456790", 
+    "authentication" :true 
+    }"""
+        print(i)
+        addSensorToGateway.send(gateway,messageToSend)
+    
     while True:
         c= 0
 
