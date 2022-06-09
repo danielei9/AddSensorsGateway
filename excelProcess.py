@@ -66,9 +66,8 @@ if(mode == "1"):
 "body" : "{\\"sensorModelName\\":\\\"""" + typelogy + """\\",\\"applicationName\\":\\\"""" + appName + """\\",\\"loraAddress\\":\\\"""" + loraAddress[x] + """\\",\\"componentName\\":\\\"""" + componentName[x] + """\\",\\"sensorNames\\":{\\\"""" + sensorName + """\\":\\\"""" + sensorId + """\\"},\\"serverIds\\":["""+ serverId + """]}",
 "port" : 4999,
 "timestamp" : "2019-12-08T16:00:02.2805625Z",
-"3
-Id" : "123456790",
-"authentication" :true3
+"requestId" : "123456790",
+"authentication" :true
 }"""
         addSensorToGateway.send(gateway,messageToSend)
         time.sleep(0.1)
