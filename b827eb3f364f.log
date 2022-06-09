@@ -1,0 +1,118 @@
+DEBUG:root:2022-06-09 17:29:26.748577
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:29:28.631800
+DEBUG:root:{
+  "path": "/servers",
+  "method": "GET",
+  "body": "",
+  "port": 4999,
+  "timestamp": "2019-12-08T16:00:02.2805625Z",
+  "requestId": "123456790",
+  "authentication": true
+}
+DEBUG:root:2022-06-09 17:30:06.640626
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:30:08.533007
+DEBUG:root:{
+  "path": "/servers",
+  "method": "GET",
+  "body": "",
+  "port": 4999,
+  "timestamp": "2019-12-08T16:00:02.2805625Z",
+  "requestId": "123456790",
+  "authentication": true
+}
+DEBUG:root:2022-06-09 17:31:01.662458
+DEBUG:root:{
+  "gatewayTimestamp": "2022-06-09T15:31:00.6138602Z",
+  "gatewayId": "b827eb3f364f"
+}
+DEBUG:root:2022-06-09 17:31:08.163955
+DEBUG:root:{
+  "path": "/servers",
+  "method": "GET",
+  "body": "",
+  "port": 4999,
+  "timestamp": "2019-12-08T16:00:02.2805625Z",
+  "requestId": "123456790",
+  "authentication": true
+}
+DEBUG:root:2022-06-09 17:31:25.431937
+DEBUG:root:{
+  "path": "/servers",
+  "method": "GET",
+  "body": "",
+  "port": 4999,
+  "timestamp": "2019-12-08T16:00:02.2805625Z",
+  "requestId": "123456790",
+  "authentication": true
+}
+DEBUG:root:2022-06-09 17:31:37.751430
+DEBUG:root:{
+  "responseCode": 200,
+  "response": "[{\"pkId\":1,\"serverName\":\"Catadau\",\"url\":\"https://connecta.dival.es/sentilo-api/data\",\"identityKey\":\"fb39dbd32b4d661867f965bd7937cf8a56c69a3fbc43bf80f8c741539264a38b\",\"provider\":\"catadau@geswat\",\"type\":0}]",
+  "timestamp": "2022-06-09T15:31:36.6822612Z",
+  "originalRequest": {
+    "path": "/servers",
+    "method": "GET",
+    "authentication": true,
+    "body": "",
+    "port": 4999,
+    "timestamp": "2019-12-08T16:00:02.2805625Z",
+    "requestId": "123456790"
+  }
+}
+DEBUG:root:2022-06-09 17:32:01.647407
+DEBUG:root:{
+  "gatewayTimestamp": "2022-06-09T15:32:00.6141267Z",
+  "gatewayId": "b827eb3f364f"
+}
+DEBUG:root:2022-06-09 17:32:40.040601
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:32:41.915108
+DEBUG:root:{
+  "path": "/servers",
+  "method": "GET",
+  "body": "",
+  "port": 4999,
+  "timestamp": "2019-12-08T16:00:02.2805625Z",
+  "requestId": "123456790",
+  "authentication": true
+}
+DEBUG:root:2022-06-09 17:32:42.961119
+DEBUG:root:{
+  "responseCode": 200,
+  "response": "[{\"pkId\":1,\"serverName\":\"Catadau\",\"url\":\"https://connecta.dival.es/sentilo-api/data\",\"identityKey\":\"fb39dbd32b4d661867f965bd7937cf8a56c69a3fbc43bf80f8c741539264a38b\",\"provider\":\"catadau@geswat\",\"type\":0}]",
+  "timestamp": "2022-06-09T15:32:41.254342Z",
+  "originalRequest": {
+    "path": "/servers",
+    "method": "GET",
+    "authentication": true,
+    "body": "",
+    "port": 4999,
+    "timestamp": "2019-12-08T16:00:02.2805625Z",
+    "requestId": "123456790"
+  }
+}
+DEBUG:root:2022-06-09 17:33:01.659620
+DEBUG:root:{
+  "gatewayTimestamp": "2022-06-09T15:33:00.614282Z",
+  "gatewayId": "b827eb3f364f"
+}
+DEBUG:root:2022-06-09 17:34:11.985926
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:34:14.075230
+DEBUG:root:{
+  "responseCode": 200,
+  "response": "[{\"pkId\":1,\"serverName\":\"Catadau\",\"url\":\"https://connecta.dival.es/sentilo-api/data\",\"identityKey\":\"fb39dbd32b4d661867f965bd7937cf8a56c69a3fbc43bf80f8c741539264a38b\",\"provider\":\"catadau@geswat\",\"type\":0}]",
+  "timestamp": "2022-06-09T15:34:13.0145299Z",
+  "originalRequest": {
+    "path": "/servers",
+    "method": "GET",
+    "authentication": true,
+    "body": "",
+    "port": 4999,
+    "timestamp": "2019-12-08T16:00:02.2805625Z",
+    "requestId": "123456790"
+  }
+}

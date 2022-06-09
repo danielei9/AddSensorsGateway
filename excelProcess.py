@@ -8,7 +8,7 @@ import time
 gateway = "dca632143f21"
 print(""" Seleccione un modo de uso: \n     1. Agregar sensores mediante excel... (Configuracion del excel 1º columna componentName y 3º Deveui)\n     2. Manualamente 1by1 () \n     3. Get Servers \n     4. Get Oems \n     5. Delete from id to id\n     6. PUT from id to id\n     7. PUT from list id """)
 mode = input()
-print(" Introduzca la mac gateway... ejemplo b827eb18ad132")
+print(" Introduzca la mac gateway... ejemplo b827eb495f0c")
 gateway = input()
 addSensorToGateway.initLog(gateway)
 
@@ -66,8 +66,9 @@ if(mode == "1"):
 "body" : "{\\"sensorModelName\\":\\\"""" + typelogy + """\\",\\"applicationName\\":\\\"""" + appName + """\\",\\"loraAddress\\":\\\"""" + loraAddress[x] + """\\",\\"componentName\\":\\\"""" + componentName[x] + """\\",\\"sensorNames\\":{\\\"""" + sensorName + """\\":\\\"""" + sensorId + """\\"},\\"serverIds\\":["""+ serverId + """]}",
 "port" : 4999,
 "timestamp" : "2019-12-08T16:00:02.2805625Z",
-"requestId" : "123456790",
-"authentication" :true
+"3
+Id" : "123456790",
+"authentication" :true3
 }"""
         addSensorToGateway.send(gateway,messageToSend)
         time.sleep(0.1)
@@ -98,7 +99,8 @@ if(mode == "2"):
     addSensorToGateway.send(gateway,messageToSend)
     print("CTRL + C To exit2")
     while True:
-        print("...")
+        c=0
+        time.sleep(0.1)
 
 if(mode == "3"):
     messageToSend = """{
@@ -111,12 +113,13 @@ if(mode == "3"):
         "authentication" :true
     }"""
     addSensorToGateway.createLoopMqttRecive(gateway + "/gateway_requests/response/#")
-    addSensorToGateway.createLoopMqttRecive(gateway + "/gateway_requests/response/#")
+    #addSensorToGateway.createLoopMqttRecive(gateway + "/gateway_requests/response/#")
     time.sleep(0.5) 
     addSensorToGateway.send(gateway,messageToSend)
     print("CTRL + C To exit2")
     while True:
-        c= 0
+        c=0
+        time.sleep(0.1)
 
 if(mode == "4"):
     messageToSend = """{ 
@@ -134,7 +137,8 @@ if(mode == "4"):
     addSensorToGateway.send(gateway,messageToSend)
     print("CTRL + C To exit2")
     while True:
-        c= 0
+        c=0
+        time.sleep(0.1)
 
     
 
@@ -160,7 +164,8 @@ if(mode == "5"):
         addSensorToGateway.send(gateway,messageToSend)
         
     while True:
-        c= 0
+        c=0
+        time.sleep(0.1)
 
 
 
@@ -190,8 +195,8 @@ if(mode == "6"):
         addSensorToGateway.send(gateway,messageToSend)
     
     while True:
-        c= 0
-
+        c=0
+        time.sleep(0.1)
     
 if(mode == "7"):
     print(" put funciona por lista")
@@ -219,6 +224,6 @@ if(mode == "7"):
         addSensorToGateway.send(gateway,messageToSend)
     
     while True:
-        c= 0
-
+        c=0
+        time.sleep(0.1)
     

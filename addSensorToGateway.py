@@ -13,6 +13,7 @@ def on_message(clt, usrdata, mess):
     print("Received message: \n", jsonFormat)  # <-- shall be m_in["method"]
     print()
     log.logRegister(jsonFormat)
+
 def initLog(name):
     log.initLog(name)
 

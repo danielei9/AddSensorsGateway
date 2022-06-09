@@ -1,0 +1,52 @@
+DEBUG:root:2022-06-09 17:12:37.489695
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:18:14.031442
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:23:20.140886
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:23:56.216568
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:24:34.119682
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:26:28.505177
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:27:25.936752
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:27:27.819603
+DEBUG:root:{
+  "path": "/servers",
+  "method": "GET",
+  "body": "",
+  "port": 4999,
+  "timestamp": "2019-12-08T16:00:02.2805625Z",
+  "requestId": "123456790",
+  "authentication": true
+}
+DEBUG:root:2022-06-09 17:27:55.901234
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:27:57.774834
+DEBUG:root:{
+  "path": "/servers",
+  "method": "GET",
+  "body": "",
+  "port": 4999,
+  "timestamp": "2019-12-08T16:00:02.2805625Z",
+  "requestId": "123456790",
+  "authentication": true
+}
+DEBUG:root:2022-06-09 17:29:01.277285
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:29:03.153104
+DEBUG:root:{
+  "path": "/servers",
+  "method": "GET",
+  "body": "",
+  "port": 4999,
+  "timestamp": "2019-12-08T16:00:02.2805625Z",
+  "requestId": "123456790",
+  "authentication": true
+}
+DEBUG:root:2022-06-09 17:34:42.509423
+DEBUG:root:Starting...
+DEBUG:root:2022-06-09 17:35:01.453128
+DEBUG:root:Starting...
